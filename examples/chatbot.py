@@ -1,3 +1,5 @@
+import os
+
 from text_generator import TextGenerationInput, TextGenerator
 
 
@@ -14,6 +16,7 @@ class Chatbot(TextGenerator):
             system prompt is used.
 
         """
+        super().__init__("gpt-4o-mini", os.getenv("OPENAPI_API_KEY"))
         if system_prompt:
             self.set_system_prompt(system_prompt)
 
