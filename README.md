@@ -1,3 +1,3 @@
-# client-example
+# TextGenerator
 
-This is an example of an OpenAI client, using an abstract base class.
+This is an example text generator client for OpenAPI and Gemini APIs.
